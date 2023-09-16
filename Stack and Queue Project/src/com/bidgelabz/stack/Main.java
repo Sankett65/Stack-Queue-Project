@@ -7,5 +7,11 @@ public class Main {
         s.push(30);
         s.push(56);
         s.printElement();
+        System.out.println();
+
+        while (!s.isEmpty()){
+            System.out.println(s.peek());
+            s.pop();
+        }
     }
 }

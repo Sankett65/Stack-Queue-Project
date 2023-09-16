@@ -23,4 +23,19 @@ public class Stack {
             temp=temp.next;
         }
     }
+    public int pop(){
+        if (isEmpty()){
+            System.out.println("Empty");
+        }
+        int top=head.data;
+        head=head.next;
+        return top;
+    }
+
+    public int peek(){
+        if (isEmpty()){
+            System.out.println("Empty");
+        }
+        return head.data;
+    }
 }
