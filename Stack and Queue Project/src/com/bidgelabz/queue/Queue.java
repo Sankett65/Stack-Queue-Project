@@ -29,4 +29,16 @@ public class Queue {
         }
     }
 
+    public int dequeue(){
+        if (isEmpty()){
+            System.out.println("Empty");
+        }
+        int front =head.data;
+        if (head==tail){
+            tail=null;
+        }
+        head=head.next;
+        return front;
+    }
+
 }
